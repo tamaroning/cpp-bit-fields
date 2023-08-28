@@ -876,8 +876,8 @@ class Bitfield_seq_storage_write_buf
 
         if (buffer_status == Empty)
           {
-            if (((First_storage_offset != ~unsigned(0)) and
-                 (offset <= First_storage_offset)) or
+            if (((First_storage_offset != ~unsigned(0)) &&
+                 (offset <= First_storage_offset)) ||
                 (offset >= Last_storage_offset))
               {
                 Storage_access_t sa_(sa);
